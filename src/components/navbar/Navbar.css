@@ -1,0 +1,87 @@
+.navbar-right {
+    position: absolute;
+    z-index: 10000;
+    right: 0;
+    top: 0;
+    background-color: white;
+    height: 100vh;
+    width: 30%;
+    color: black;
+    padding: 12px 50px;
+}
+
+.close-menu {
+    display: flex;
+    justify-content: end;
+   
+}
+.close-menu div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+
+}
+
+.navbar-header-text {
+    color: #838383;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.navbar-menu-links {
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.navbar-menu-links li {
+    list-style: none;
+}
+
+.navbar-menu-links li a {
+    font-size: 1.4rem;
+    color: #969499;
+    display: inline-block;
+    padding-bottom: 0;
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+.navbar-menu-links li a:hover {
+    color: #333;
+}
+.navbar-bottom {
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+}
+.navbar-bottom ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.navbar-bottom ul li{
+    list-style: none;
+    margin-right: 20px;
+    height: 32px;
+    width: 32px;
+    background-color: #eaebe6;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+}
+.navbar-bottom ul li a{
+    text-decoration: none;
+    margin-top: 2px;
+}
+.legal{
+    position: absolute;
+    right: 20%;
+}
+.legal a{
+    color: #838383;
+    text-decoration: none;
+}
