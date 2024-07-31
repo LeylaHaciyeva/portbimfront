@@ -3,7 +3,8 @@
     background-attachment: fixed;
     object-fit: cover;
     min-height: 300px;
-  
+    cursor: url(../../images/cursor.png) 0 0, url(../../images/cursor.png) 0 0, auto;
+
 }
 
 
@@ -24,9 +25,10 @@
     position: absolute;
     bottom: 15vh;
     left: 60px;
-   
+
 }
-.overlay-div{
+
+.overlay-div {
     position: absolute;
     background: linear-gradient(to bottom, transparent 75%, black 100%);
     width: 100%;
@@ -50,7 +52,7 @@
         transform: translate(0, -25%);
     }
 } */
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
     .slider-text {
         position: relative;
         display: flex;

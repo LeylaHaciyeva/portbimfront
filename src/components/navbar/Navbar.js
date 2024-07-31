@@ -5,40 +5,44 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { Link } from 'react-router-dom'
+import { useDispatch, useSelector } from 'react-redux';
 
 const Navbar = () => {
-  function handleCloseMenuClick() {
+  let openMenu = useSelector((state) => state.openMenu)
+  function handleClose(){
+    dispatch({type:"closeMenu",payload:openMenu})
   }
+  const dispatch = useDispatch()
   return (
     <div className='navbar-right'>
-      <div className='close-menu'>
+      <div className='close-menu' onClick={handleClose}>
         <div>
-          <MdOutlineClose className='closebtn' color="white" fontSize={18} onClick={handleCloseMenuClick} />
+          <MdOutlineClose className='closebtn' color="white" fontSize={18}  />
         </div>
       </div>
       <div className='navbar-menu'>
         <span className='navbar-header-text' >Menu</span>
         <ul className='navbar-menu-links'>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/about" onClick={handleClose}>About</Link>
           </li>
           <li>
-            <Link to="/projects">Projects</Link>
+            <Link to="/projects"  onClick={handleClose}>Projects</Link>
           </li>
           <li>
-            <Link to="/design">Design and MEP</Link>
+            <Link to="/design"  onClick={handleClose}>Design and MEP</Link>
           </li>
           <li>
-            <Link to="/bimservices">BIM Services</Link>
+            <Link to="/bimservices"  onClick={handleClose}>BIM Services</Link>
           </li>
           <li>
-            <Link to="/news">News</Link>
+            <Link to="/news"  onClick={handleClose}>News</Link>
           </li>
           <li>
-            <Link to="/careers">Careers</Link>
+            <Link to="/careers"  onClick={handleClose}>Careers</Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact"  onClick={handleClose}>Contact</Link>
           </li>
         </ul>
       </div>

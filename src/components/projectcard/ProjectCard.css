@@ -1,0 +1,41 @@
+.card {
+    padding: 20px !important;
+    border: none !important;
+    border-top-left-radius: calc(.25rem + 1px);
+    border-top-right-radius: calc(.25rem + 1px);
+}
+
+.card img {
+    height: 280px;
+    width: 100%;
+    object-fit: cover;
+}
+.card a{
+    text-decoration: none;
+    color: #2a2a2a;
+}
+.card-body {
+    background-color: #f5f5f5 !important;
+    border-bottom-left-radius: calc(.25rem + 1px);
+    border-bottom-right-radius: calc(.25rem + 1px);
+    padding:20px 25px;
+    cursor: pointer;
+    height: 150px;
+}
+
+.card-text {
+    position: relative !important;
+}
+
+.gotoproject {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

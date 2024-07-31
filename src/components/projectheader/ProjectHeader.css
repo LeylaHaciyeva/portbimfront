@@ -1,0 +1,16 @@
+.project-header{
+    padding: 20px 0;
+    border-bottom: 1px solid #ebebeb;
+    /* position: fixed;
+    top: 0; */
+}
+.project-header-text h2{
+    color: #4c4a4a;
+    font-size: 1.5rem;
+}
+.project-count span, .project-count p{
+    color: #747779;
+    font-size: 1.3rem;
+    margin-bottom: 0;
+
+}

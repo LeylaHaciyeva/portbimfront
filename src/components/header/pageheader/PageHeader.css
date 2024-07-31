@@ -1,0 +1,24 @@
+.page-header{
+    background-color: white;
+    height: 75px;
+    width: 100%;
+    border-bottom: 1px solid #ebebeb;
+}
+.page-logo a{
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+#page-language{
+    background: none;
+    color: black;
+    appearance: none;
+    border: none;
+    text-transform: uppercase;
+    padding: 0 5px;
+}
+#page-language option{
+    background-color:white;
+    border: none;
+    color:black;
+}

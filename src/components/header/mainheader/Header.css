@@ -1,0 +1,36 @@
+.header{
+    background-color: #00000059;
+    transition: background-color .6s, top .3s linear;
+    z-index: 9999;
+    height: 75px;
+    width: 100%;
+    position: fixed;
+}
+/* .header:hover{
+    background-color: black;
+} */
+.logo a{
+    color: white;
+    text-decoration: none;
+    transition: cursor .4s ease;
+}
+.logo a:hover{
+    cursor: url(../../../images/cursor-pointer.png) 0 0, url(../../../images/cursor-pointer.png) 0 0, auto;
+    transition: cursor .4s ease;
+}
+.header-search a:hover{
+    cursor: url(../../../images/cursor-pointer.png) 0 0, url(../../../images/cursor-pointer.png) 0 0, auto !important;
+}
+#language{
+    background: none;
+    color: white;
+    appearance: none;
+    border: none;
+    text-transform: uppercase;
+    padding: 0 5px;
+}
+#language option{
+    background-color:#00000059;
+    border: none;
+    color:black;
+}

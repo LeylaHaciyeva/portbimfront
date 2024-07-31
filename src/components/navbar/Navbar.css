@@ -13,9 +13,14 @@
 .close-menu {
     display: flex;
     justify-content: end;
-   
+
 }
-.close-menu div{
+
+.close-menu:hover {
+    cursor: pointer;
+}
+
+.close-menu div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,17 +58,20 @@
 .navbar-menu-links li a:hover {
     color: #333;
 }
+
 .navbar-bottom {
     position: absolute;
     bottom: 10%;
     width: 100%;
 }
+
 .navbar-bottom ul {
     padding: 0;
     margin: 0;
     display: flex;
 }
-.navbar-bottom ul li{
+
+.navbar-bottom ul li {
     list-style: none;
     margin-right: 20px;
     height: 32px;
@@ -73,15 +81,18 @@
     justify-content: center;
     border-radius: 50%;
 }
-.navbar-bottom ul li a{
+
+.navbar-bottom ul li a {
     text-decoration: none;
     margin-top: 2px;
 }
-.legal{
+
+.legal {
     position: absolute;
     right: 20%;
 }
-.legal a{
+
+.legal a {
     color: #838383;
     text-decoration: none;
 }
