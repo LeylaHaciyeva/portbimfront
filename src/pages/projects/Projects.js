@@ -9,6 +9,7 @@ const Projects = () => {
       <PageHeader />
       <ProjectHeader />
       <ProjectCards/>
+  
     </div>
   )
 }

@@ -1,10 +1,10 @@
 import './App.css';
 import About from './pages/about/About.js'
 import Projects from './pages/projects/Projects.js'
-import ProjectDetail from './components/projectdetail/ProjectDetail.js'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import Home from './pages/home/Home.js';
 import { useEffect } from 'react';
+import ProjectDetail from './pages/projectdetail/ProjectDetail.js';
 
 
 function App() {

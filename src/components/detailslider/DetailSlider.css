@@ -1,0 +1,31 @@
+.detail-slider {
+    margin-bottom: 50px;
+}
+
+.detail-slider img {
+    width: 80%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.slider-item {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.slick-arrow {
+    z-index: 2000000;
+}
+
+.slick-arrow::before {
+    color: grey;
+    font-size: 30px;
+}
+
+.slick-next {
+    right: 40px;
+}
+
+.slick-prev {
+    left: 40px;
+}
