@@ -4,7 +4,7 @@
     background-image: url(../../images/detailslider1.jpg);
     width: 100%;
     background-attachment: fixed;
-    height: 700px;
+    height: 100vh;
     background-position: center center;
 }
 
@@ -15,7 +15,7 @@
     line-height: 1em;
     height: 1em;
     left: 6%;
-    bottom: 70px;
+    bottom: 0;
     color: #fff;
 }
 

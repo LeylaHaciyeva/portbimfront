@@ -17,7 +17,7 @@ const About = () => {
       <PageHeader />
       <div className='about-image'>
         <div></div>
-        {/* <p>About</p> */}
+        <p>About</p>
       </div>
       <div className='container about-text-container'>
         <h2>

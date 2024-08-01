@@ -1,0 +1,18 @@
+.contact-image div {
+    background-image: url(../../images/detailslider1.jpg);
+    width: 100%;
+    background-attachment: fixed;
+    height: 100vh;
+    background-position: center center;
+}
+
+.contact-image p {
+    display: block;
+    position: absolute;
+    font-size: 72px;
+    line-height: 1em;
+    height: 1em;
+    left: 6%;
+    bottom: 0;
+    color: #fff;
+}

@@ -5,6 +5,8 @@ import { Route, Routes, useLocation } from 'react-router-dom'
 import Home from './pages/home/Home.js';
 import { useEffect } from 'react';
 import ProjectDetail from './pages/projectdetail/ProjectDetail.js';
+import Contact from './pages/contact/Contact.js';
+import BimServices from './pages/bim/BimServices.js';
 
 
 function App() {
@@ -25,6 +27,10 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/projects' element={<Projects />} />
         <Route path='/detail' element={<ProjectDetail/>} />
+        <Route path='/contact' element={<Contact/>} />
+        <Route path='/bimservices' element={<BimServices/>} />
+
+
       </Routes>
     </div>
   );
