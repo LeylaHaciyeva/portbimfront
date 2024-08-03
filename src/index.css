@@ -2,8 +2,15 @@
 html {
   margin: 0;
   padding: 0;
-
-}
-body{
   /* cursor: url(./images/cursor.png) 0 0, url(./images/cursor.png) 0 0, auto; */
+}
+
+*,
+body {}
+
+/* body{
+  cursor: none;
+} */
+svg {
+  cursor: url(./images/cursor-pointer.png) 0 0, url(./images/cursor-pointer.png) 0 0, auto !important;
 }

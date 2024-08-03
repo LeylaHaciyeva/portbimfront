@@ -1,36 +1,81 @@
-.header{
+.header {
     background-color: #00000059;
     transition: background-color .6s, top .3s linear;
     z-index: 9999;
-    height: 75px;
+    height: 100px;
     width: 100%;
     position: fixed;
+    cursor: url(../../../images/cursor.png) 0 0, url(../../../images/cursor.png) 0 0, auto;
+    transition: cursor .4s ease;
+
+
 }
+
 /* .header:hover{
     background-color: black;
 } */
-.logo a{
+.logo {
+    display: inline-block;
+    padding: 5px 15px;
+    position: relative;
+}
+
+.logo a {
     color: white;
     text-decoration: none;
-    transition: cursor .4s ease;
-}
-.logo a:hover{
+    font-size: 40px;
+    padding: 10px;
     cursor: url(../../../images/cursor-pointer.png) 0 0, url(../../../images/cursor-pointer.png) 0 0, auto;
     transition: cursor .4s ease;
 }
-.header-search a:hover{
-    cursor: url(../../../images/cursor-pointer.png) 0 0, url(../../../images/cursor-pointer.png) 0 0, auto !important;
+
+.theme {
+    border: 2px solid white;
+    border-radius: 10px;
+    width: auto;
+    height: 40px;
+    padding: 0px 15px;
+    cursor: url(../../../images/cursor-pointer.png) 0 0, url(../../../images/cursor-pointer.png) 0 0, auto;
+
 }
-#language{
+
+.theme div {
+    cursor: url(../../../images/cursor-pointer.png) 0 0, url(../../../images/cursor-pointer.png) 0 0, auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-search {
+    padding: 15px;
+    cursor: url(../../../images/cursor-pointer.png) 0 0, url(../../../images/cursor-pointer.png) 0 0, auto !important;
+    transition: cursor .4s ease;
+}
+
+#language {
     background: none;
     color: white;
     appearance: none;
     border: none;
     text-transform: uppercase;
-    padding: 0 5px;
+    padding: 15px;
+    cursor: url(../../../images/cursor-pointer.png) 0 0, url(../../../images/cursor-pointer.png) 0 0, auto !important;
+
 }
-#language option{
-    background-color:#00000059;
+
+#language option {
+    background-color: #00000059;
     border: none;
-    color:black;
+    color: black;
+}
+
+.menu {
+    padding: 15px;
+    cursor: url(../../../images/cursor-pointer.png) 0 0, url(../../../images/cursor-pointer.png) 0 0, auto !important;
+}
+.dark-mode{
+    background-color: black;
+}
+.light-mode{
+    background-color: blue;
 }

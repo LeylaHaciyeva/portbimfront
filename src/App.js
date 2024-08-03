@@ -10,15 +10,15 @@ import BimServices from './pages/bim/BimServices.js';
 
 
 function App() {
-  let location = useLocation();
-  useEffect(() => {
-    if (location.pathname === "/") {
-      window.document.body.style.overflow = "hidden"
-    }
-    else {
-      window.document.body.style.overflow = "auto"
-    }
-  }, [location])
+  // let location = useLocation();
+  // useEffect(() => {
+  //   if (location.pathname === "/") {
+  //     window.document.body.style.overflow = "hidden"
+  //   }
+  //   else {
+  //     window.document.body.style.overflow = "auto"
+  //   }
+  // }, [location])
 
   return (
     <div>

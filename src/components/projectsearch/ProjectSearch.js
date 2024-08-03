@@ -6,7 +6,7 @@ import { BsSortAlphaDown } from "react-icons/bs";
 const ProjectSearch = () => {
   return (
     <div style={{borderBottom:"1px solid #ebebeb"}}>
-      <div className='project-search container pt-4 pb-4'>
+      <div className='project-search container pb-4'>
         <div className='row'>
           <div className='col-lg-6 search-container'>
             <div>

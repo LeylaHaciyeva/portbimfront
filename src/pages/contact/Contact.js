@@ -6,9 +6,38 @@ const Contact = () => {
     return (
         <div>
             <PageHeader />
-            <div className='contact-image'>
-                <div></div>
-                <p>Contact</p>
+            <div className='contact-form container'>
+                <div className='row'>
+                    <div className='col-lg-12 text-center'>
+                        <h2>Send your message</h2>
+                    </div>
+                </div>
+                <div className='row'>
+                    <div className='col-lg-6'>
+                        <div className='col-lg-12'>
+                            <input type="text" placeholder='Name *' />
+                        </div>
+                        <div className='col-lg-12'>
+                            <input type="text" placeholder='Email *' />
+                        </div>
+                        <div className='col-lg-12'>
+                            <input type="text" placeholder='Phone *' />
+                        </div>
+                        <div className='col-lg-12'>
+                            <p style={{color:"#777"}}>* These fields are required.</p>
+                        </div>
+
+                    </div>
+                    <div className='col-lg-6'>
+                        <div className='col-lg-12'>
+                            <textarea placeholder='Message' cols="6" rows="3" />
+                        </div>
+                        <div className='col-lg-12'>
+                            <button>Send message</button>
+                        </div>
+                    </div>
+
+                </div>
             </div>
             <div className='contact'>
                 <div className='container'>
@@ -30,12 +59,12 @@ const Contact = () => {
                 </div>
             </div>
             <div className='map'>
-                <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17184.858350154645!2d49.87861495316862!3d40.4114544126472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d52be6c8699%3A0x6505ee210ccd92c0!2zNTVhIMaPbGl5YXIgxo9saXlldiwgQmFrxLE!5e0!3m2!1saz!2saz!4v1722507437752!5m2!1saz!2saz" 
-                width="100%" height="450" style={{border:0}} allowfullscreen="" loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17184.858350154645!2d49.87861495316862!3d40.4114544126472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d52be6c8699%3A0x6505ee210ccd92c0!2zNTVhIMaPbGl5YXIgxo9saXlldiwgQmFrxLE!5e0!3m2!1saz!2saz!4v1722507437752!5m2!1saz!2saz"
+                    width="100%" height="450" style={{ border: 0 }} allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <Footer/>
+            <Footer />
         </div>
     )
 }

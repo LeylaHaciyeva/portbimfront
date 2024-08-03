@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 import { GoArrowRight } from "react-icons/go";
 const ProjectCard = () => {
     return (
-        <Card className='col-lg-4 col-md-6 col-sm-12 col-12 b-none' >
+        <Card className='col-lg-4 col-md-6 col-sm-12 col-12 b-none project-card' >
             <Link to='/detail'>
                 <Card.Img variant="top" src={cardImage} />
                 <Card.Body>

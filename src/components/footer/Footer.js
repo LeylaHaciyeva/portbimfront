@@ -3,14 +3,18 @@ import '../footer/Footer.css'
 import { FaFacebookF, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 import { FaLongArrowAltUp } from "react-icons/fa";
 import { Link } from 'react-router-dom'
+
 const Footer = () => {
+    function handleScrolltoTop(){
+        window.scrollTo(0,0)
+    }
     return (
         <div className='footer'>
             <div className='container'>
                 <div className='row'>
                     <div className='col-lg-6 col-md-6 col-sm-12 col-12'>
                         <div className='footer-logo'>
-                            <h2>PortBIM</h2>     
+                            <h2><Link to="/">PortBIM</Link></h2>     
                         </div>
                         <ul className='footer-menu'>
                                 <li>
@@ -55,7 +59,7 @@ const Footer = () => {
                                     </Link>
                                 </li>
                             </ul>
-                            <button className='scrolltotop'>
+                            <button className='scrolltotop' onClick={handleScrolltoTop}>
                                 <p>
                                     Back to top
                                 </p>

@@ -13,6 +13,8 @@
 .footer-menu li {
     list-style: none;
     margin-right: 15px;
+    cursor: url(../../images/cursor-pointer.png) 0 0, url(../../images/cursor-pointer.png) 0 0, auto !important;
+
 }
 
 .footer-menu li a {
@@ -20,6 +22,8 @@
     color: #5e5e5e;
     text-decoration: none;
     text-wrap: nowrap;
+    cursor: url(../../images/cursor-pointer.png) 0 0, url(../../images/cursor-pointer.png) 0 0, auto !important;
+
 }
 
 .footer-social-menu {
@@ -37,9 +41,13 @@
     display: flex;
     justify-content: center;
     border-radius: 50%;
+    cursor: url(../../images/cursor-pointer.png) 0 0, url(../../images/cursor-pointer.png) 0 0, auto !important;
+
 }
 .footer-social-menu li a {
     margin-top: 2px;
+    cursor: url(../../images/cursor-pointer.png) 0 0, url(../../images/cursor-pointer.png) 0 0, auto !important;
+
 }
 .scrolltotop{
     display: flex;
@@ -47,6 +55,8 @@
     border: none;
     background: none;
     outline: none;
+    cursor: url(../../images/cursor-pointer.png) 0 0, url(../../images/cursor-pointer.png) 0 0, auto !important;
+
 }
 .scrolltotop p{
     margin: 0;
@@ -59,4 +69,10 @@
 }
 .footer .privacy p{
     color: #5e5e5e;
+}
+.footer-logo a{
+    text-decoration: none;
+    color: black;
+    cursor: url(../../images/cursor-pointer.png) 0 0, url(../../images/cursor-pointer.png) 0 0, auto !important;
+
 }
