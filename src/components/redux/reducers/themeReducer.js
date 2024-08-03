@@ -1,6 +1,6 @@
 
 const initialState = {
-    theme: localStorage.getItem("darkMode") !==undefined ? localStorage.getItem("darkMode"): localStorage.setItem("darkMode",true)
+    theme: localStorage.getItem("darkMode") !== undefined ? localStorage.getItem("darkMode") : localStorage.setItem("darkMode", true)
 };
 
 const themeReducer = (state = initialState, action) => {
