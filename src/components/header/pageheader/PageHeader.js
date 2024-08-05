@@ -28,14 +28,17 @@ const PageHeader = () => {
   useEffect(() => {
     openMenu ? window.document.body.style.overflow = "hidden" : window.document.body.style.overflow = "auto"
   }, [openMenu])
-
+  function handleClose() {
+    dispatch({type:"closeMenu"})
+  }
+  
   return (
-    <div className={theme ? 'dark-mode page-header d-flex align-items-center justify-content-center'
-      : "light-mode page-header d-flex align-items-center justify-content-center"}>
+    <div className={theme ? 'page-header d-flex align-items-center justify-content-center'
+      : " page-header d-flex align-items-center justify-content-center"}>
       <div className='container '>
         <div className="row d-flex align-items-center justify-content-center">
           <div className="col-lg-6 col-6 col-md-6 col-sm-6">
-            <h2 className="page-logo"><Link to="/">PortBIM</Link></h2>
+            <h2 className="page-logo"><Link to="/" onClick={handleClose}>PortBIM</Link></h2>
           </div>
           <div className="col-lg-6 col-6 col-md-6 col-sm-6 header-right d-flex justify-content-end align-items-center">
             <div className='theme d-flex'>

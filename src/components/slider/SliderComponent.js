@@ -50,12 +50,7 @@ function SliderComponent() {
             <source src={video1} type="video/mp4" />
           </video>
           <div className="overlay-div">
-            <div className="slider-text">
-              <div>
-                <span>News</span>
-                <h2>Apple’s first retail location in Malaysia opens to the public</h2>
-              </div>
-            </div>
+            
           </div>
         </div>
         <div>

@@ -24,7 +24,9 @@ const Header = () => {
   function handleLightMode() {
     dispatch({ type: "LIGHT", payload: theme })
   }
-
+function handleClose() {
+  dispatch({type:"closeMenu"})
+}
 
 
   return (
@@ -34,7 +36,7 @@ const Header = () => {
         <div className="row d-flex align-items-center justify-content-center">
           <div className="col-lg-6 col-6 col-md-6 col-sm-6">
             <h2 className="logo">
-              <Link to="/">PortBIM</Link></h2>
+              <Link to="/" onClick={handleClose}>PortBIM</Link></h2>
           </div>
           <div className="col-lg-6 col-6 col-md-6 col-sm-6 header-right d-flex justify-content-end align-items-center">
             <div className='theme d-flex'>

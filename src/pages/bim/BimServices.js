@@ -8,7 +8,6 @@ const BimServices = () => {
     <div>
       <PageHeader />
       <BimThree />
-     
     </div>
   )
 }
