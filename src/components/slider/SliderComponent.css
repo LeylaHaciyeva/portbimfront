@@ -45,7 +45,17 @@
 .slider-text span {
     color: white;
 }
+.text-animation{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: calc( 50% - 20rem);
 
+}
+.text-animation h1{
+    font-size: 20rem;
+}
 /* @media screen and (max-width: 1100px){
     .slider-text {
         left: 25%;

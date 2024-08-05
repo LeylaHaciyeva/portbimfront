@@ -10,6 +10,7 @@ import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import clientlogo from '../../images/clientLogo.png'
 import clientlogo2 from '../../images/clientLogo2.png'
+import Footer from '../../components/footer/Footer'
 
 const About = () => {
   return (
@@ -124,6 +125,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   )
 }

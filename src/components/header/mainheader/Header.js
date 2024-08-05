@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { CiMenuBurger } from "react-icons/ci";
 import { GrLanguage } from "react-icons/gr";
 import { CiSearch } from "react-icons/ci";
@@ -9,23 +9,23 @@ import { Link } from 'react-router-dom'
 import { IoSunnyOutline } from "react-icons/io5";
 import { IoMoonOutline } from "react-icons/io5";
 const Header = () => {
-  let openMenu = useSelector((state) => state.openMenu)
-  let theme = useSelector((state) => state.theme)
+  let openMenu = useSelector((state) => state.menuReducer.openMenu)
+  let theme = useSelector((state) => state.themeReducer.theme)
   const dispatch = useDispatch()
-  let [language, setLanguage] = useState("en")
+  let lang = useSelector((state) => state.languageReducer.lang)
   let lngs = [{ id: 1, lng: "az" }, { id: 2, lng: "en" }, { id: 3, lng: "ru" }]
   const handleChangeLanguage = (event) => {
-    setLanguage(event.target.value);
+    dispatch({ type: event.target.value, payload: lang })
   };
   function handleDarkMode() {
     dispatch({ type: "DARK", payload: theme })
-    console.log(theme);
   }
-  
+
   function handleLightMode() {
     dispatch({ type: "LIGHT", payload: theme })
-    console.log(theme);
   }
+
+
 
   return (
     <div className={theme ? "dark-mode header d-flex align-items-center justify-content-center" :
@@ -46,45 +46,25 @@ const Header = () => {
               </div>
             </div>
             <div className='header-search mr-2'>
-              {/* <a
-                style={{ padding: "20px", cursor: `url(../../../images/cursor-pointer.png) 0 0, url(../../../images/cursor-pointer.png) 0 0, auto !important` }}>
-              */}
               <CiSearch cursor="pointer" color='white' size={25} className='' />
-              {/* </a> */}
             </div>
             <div className='language mr-2'>
-              {/* <GrLanguage cursor="pointer" color='white' size={20} className='' /> */}
-              {/* <a
-                style={{
-                  padding: "20px",
-                  cursor: `url(../../../images/cursor-pointer.png) 0 0, url(../../../images/cursor-pointer.png) 0 0, auto !important`
-                }}> */}
-              <select id='language' value={language} onChange={handleChangeLanguage}>
+              <select id='language' value={lang} defaultValue={lang} onChange={handleChangeLanguage}>
                 {Object.values(lngs).map((lng) => (
                   <option key={lng.id} value={lng.lng}>
                     {lng.lng}
                   </option>
                 ))}
               </select>
-              {/* </a> */}
             </div>
             <div className='menu'>
-              {/* <a
-                style={{
-                  padding: "20px",
-                  cursor: `url(../../../images/cursor-pointer.png) 0 0, url(../../../images/cursor-pointer.png) 0 0, auto !important`
-                }}> */}
-
               <CiMenuBurger cursor="pointer" color='white' size={25} className=''
                 onClick={() => dispatch({ type: "openMenu", payload: openMenu })} />
-              {/* </a> */}
             </div>
           </div>
         </div>
       </div>
-      {
-        openMenu ? <Navbar /> : null
-      }
+      <Navbar />
     </div>
   )
 }

@@ -8,16 +8,16 @@ import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux';
 
 const Navbar = () => {
-  let openMenu = useSelector((state) => state.openMenu)
-  function handleClose(){
-    dispatch({type:"closeMenu",payload:openMenu})
+  let openMenu = useSelector((state) => state.menuReducer.openMenu)
+  function handleClose() {
+    dispatch({ type: "closeMenu", payload: openMenu })
   }
   const dispatch = useDispatch()
   return (
-    <div className='navbar-right'>
+    <div className={openMenu ? 'open  ' : 'navbar-right'}>
       <div className='close-menu' onClick={handleClose}>
         <div>
-          <MdOutlineClose className='closebtn' color="white" fontSize={18}  />
+          <MdOutlineClose className='closebtn' color="white" fontSize={18} />
         </div>
       </div>
       <div className='navbar-menu'>
@@ -27,22 +27,22 @@ const Navbar = () => {
             <Link to="/about" onClick={handleClose}>About</Link>
           </li>
           <li>
-            <Link to="/projects"  onClick={handleClose}>Projects</Link>
+            <Link to="/projects" onClick={handleClose}>Projects</Link>
           </li>
           <li>
-            <Link to="/design"  onClick={handleClose}>Design and MEP</Link>
+            <Link to="/design" onClick={handleClose}>Design and MEP</Link>
           </li>
           <li>
-            <Link to="/bimservices"  onClick={handleClose}>BIM Services</Link>
+            <Link to="/bimservices" onClick={handleClose}>BIM Services</Link>
           </li>
           <li>
-            <Link to="/news"  onClick={handleClose}>News</Link>
+            <Link to="/news" onClick={handleClose}>News</Link>
           </li>
           <li>
-            <Link to="/careers"  onClick={handleClose}>Careers</Link>
+            <Link to="/careers" onClick={handleClose}>Careers</Link>
           </li>
           <li>
-            <Link to="/contact"  onClick={handleClose}>Contact</Link>
+            <Link to="/contact" onClick={handleClose}>Contact</Link>
           </li>
         </ul>
       </div>

@@ -55,24 +55,23 @@ function SliderComponent() {
                 <span>News</span>
                 <h2>Apple’s first retail location in Malaysia opens to the public</h2>
               </div>
-          </div>
             </div>
           </div>
-          <div>
-            <video width="100%" height="100%" autoPlay loop muted>
-              <source src={video2} type="video/mp4" />
-            </video>
-            <div className="slider-text">
-              <div>
-                <span>News</span>
-                <h2>Apple’s first retail location in Malaysia opens to the public</h2>
-              </div>
+        </div>
+        <div>
+          <video width="100%" height="100%" autoPlay loop muted>
+            <source src={video2} type="video/mp4" />
+          </video>
+          <div className="slider-text">
+            <div>
+              <span>News</span>
+              <h2>Apple’s first retail location in Malaysia opens to the public</h2>
             </div>
           </div>
-
-
+        </div>
       </Slider>
-
+      <div className="text-animation">
+      </div>
     </div>
   );
 }
