@@ -12,7 +12,6 @@ const BimServices = () => {
       {/* <BimThree /> */}
       <div style={{marginTop:"300px"}}></div>
       <FileUpload/>
-      {/* <ForgeViewer/> */}
       {/* <Viewer/> */}
     </div>
   )

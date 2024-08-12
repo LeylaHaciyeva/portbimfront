@@ -90,10 +90,12 @@
 
 import React, { useState } from 'react';
 import axios from 'axios';
+import ForgeViewer from './ForgeViewer';
 
 const FileUpload = () => {
     const [file, setFile] = useState(null);
     const [message, setMessage] = useState('');
+    const [urn, setUrn] = useState(null);
 
     const handleFileChange = (e) => {
         setFile(e.target.files[0]);
@@ -104,21 +106,25 @@ const FileUpload = () => {
 
         const formData = new FormData();
         formData.append('file', file);
-        
+
         try {
             const response = await axios.post('http://localhost:8081/api/upload', formData, {
-                headers: { 'Content-Type': 'multipart/form-data' }
+                headers: {
+                    'Content-Type': 'multipart/form-data'
+                }
             });
-            setMessage(response.data.message);
+            setMessage("great")
         } catch (error) {
             setMessage('Upload failed');
         }
     };
+    
     return (
         <div>
             <input type="file" onChange={handleFileChange} />
             <button onClick={handleUpload}>Upload</button>
             <p>{message}</p>
+            {/* <ForgeViewer urn={urn} /> */}
         </div>
     );
 };
