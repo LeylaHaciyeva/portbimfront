@@ -6,11 +6,12 @@
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
-    "@react-three/drei": "^9.109.2",
-    "@react-three/fiber": "^8.16.8",
+    "@react-three/drei": "^9.109.5",
+    "@react-three/fiber": "^8.17.5",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "@types/three": "^0.167.1",
     "axios": "^1.7.3",
     "bootstrap": "^5.3.3",
     "cors": "^2.8.5",
@@ -28,6 +29,7 @@
     "slick-carousel": "^1.8.1",
     "swiper": "^11.1.9",
     "three": "^0.167.1",
+    "web-ifc-three": "^0.0.126",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
